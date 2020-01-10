@@ -1,0 +1,362 @@
+:root {
+    --primary-color:#e50914;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #000;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,h2,h3,h4 {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.showcase { 
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('../Background_image.jpg') no-repeat center center/cover; 
+    border-bottom: 8px solid #222;
+}
+
+.showcase::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: auto;
+    background: rgba(0,0,0,0.4);
+    
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%)
+}   
+
+.showcase-top {
+    position: relative;  
+    height:90px;
+    z-index: 1;
+}
+
+.showcase-top img {
+    width: 170px;
+    position: absolute;
+    top: 0%;
+    left:3%;
+    transform: translate(0%, -5%);
+}
+
+.showcase-top a {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    transform: translate(0%, -5%);
+}
+
+.showcase-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 9rem;
+    z-index: 2;
+}
+
+.showcase-content h1 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    margin: 0 0 2rem;
+}
+
+.showcase-content p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.25;
+    margin: 0 0 2rem;
+}
+
+/* Sections */
+.sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding:90px 120px;
+    position: relative;
+    border-bottom: 8px solid #222;   
+    background: #000000; 
+    height: 473.4px;  
+}
+
+
+.section1 p{
+    font-size: 1.625rem;
+    font-weight: normal;
+    margin-bottom: 2.5rem;
+}
+
+.image-container {
+    background-size: 100%;
+    padding-bottom: 56.25%;
+    position: relative;
+    grid-column: 2;
+    
+}
+
+.image1 {
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: -90px;
+    z-index: 2;
+}
+
+
+.sections2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 2rem;
+    padding:90px 120px;
+    position: relative;
+    border-bottom: 8px solid #222;   
+    background: #000000; 
+    height: 473.4px; 
+    margin-left: -70px;
+}
+
+.section2 {
+    margin-left: 30px;
+    margin-top: 70px;
+}
+
+
+.image2 {
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
+    position: relative;   
+}
+
+.image3 {
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
+    position: relative;
+    margin-top: -50px;
+}
+
+.container {
+    height: 793px;
+    padding: 70px 45px;
+    color: #fff;
+    background-color: #000000;
+    border-bottom: 8px solid #222;
+}
+
+.container > div {
+    list-style: none;
+    
+}
+
+.container > div span {
+    float: right;
+    font-size: 2.2rem;
+    margin: -10px;
+    font-weight:20;
+}
+
+.Questions {
+    width: 815px;
+    height: 73.6px;
+    margin-bottom: 8px;
+    background-color: #222;
+    font-weight:400;
+    margin-left: 225px;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px; 
+    text-align: left;
+    border: none;
+    position: relative;
+}
+
+.footer {
+    height: 319px;
+    background: #000000;
+    position: relative;
+    padding: 70px 45px;
+}
+
+.text-container {
+    margin-left: 10rem;
+    color: #a6a6a6;
+    font-size: 16px;
+}
+
+.footer-item {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    font-size: 13px;
+    width: 1000px;
+    padding-top: 25px;
+    grid-row-gap: 18px;
+}
+
+.footer-item > li > a:hover{
+    text-decoration: underline;
+}
+
+#N-Nigeria {
+    color: #a6a6a6;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+.h1_Ctext {
+    text-align: center;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+}
+
+
+.h1_text {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.p_text {
+    font-size: 1.625rem;
+    font-weight: normal;
+    margin-bottom: 2.5rem;
+}
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.4rem 1.3rem; 
+    font-size:  1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    border-radius: 2px 
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-xl {
+    padding: 1rem 1rem; 
+    font-size: 1.625rem;
+    text-transform: uppercase;
+    width: 230px;
+    margin:auto;
+    letter-spacing: .1px;
+}
+
+.btn-xl-black {
+    padding: 1rem 1rem; 
+    text-transform: uppercase;
+    width: 179.85px;
+    letter-spacing: .1px;
+    background-color: #000;
+    font-size: 1.25rem;
+    border: 1px solid #fff;
+    line-height: normal;
+}
+.btn-lg {
+    padding: 0.8rem 1.3rem; 
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .sections, .sections2 {
+        grid-template-columns: 1fr;
+    }
+
+    .h1_text, .h1_Ctext {
+        font-size: 1.5625rem;
+        font-weight: normal;
+    }
+
+    .p_text {
+        font-size: .8125rem;
+    }
+
+    .image1, .image2, .image3 {
+        width: 50%;    
+    }
+
+    .Questions {
+        width: 407.5px;
+        height: 73.6px;
+        margin-bottom: 8px;
+        background-color: #222;
+        font-weight:100;
+        margin-left: 50px;
+        padding: 0.8em 2.2em 0.8em 1.2em;
+        cursor: pointer;
+        color: #fff;
+        font-size: 16px; 
+        text-align: left;
+        border: none;
+        position: relative;
+    }
+
+    .footer-item {
+        display: grid;
+        grid-template-columns: repeat(2, 0.2fr);
+        font-size: 13px;
+        width: 1000px;
+        padding-top: 25px;
+        grid-row-gap: 18px;
+    }
+
+    .text-container {
+        margin-left: 5rem;
+        font-size: 12px;
+    }
+
+}
